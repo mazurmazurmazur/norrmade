@@ -13,6 +13,16 @@
 
 <img src="logo.png" alt="logo1" id="logo1">
 
+    <div id="aboutDiv">
+    <h1>ABOUT</h1>
+    <a>stuffstuffstuff</a>
+        </div>
+
+    <div id="mainDiv">
+    <h1>Main?</h1>
+    <a>stuffstuffstuff</a>
+        </div>
+
 <nav id="sideNav">
 <ol class="parent">
 
@@ -41,16 +51,21 @@
         <script>
 
  $('.child').show();
+$('#aboutDiv').hide();
 
 
 
 $('#about').click(function(){
     $('.child').slideUp('slow');
+    $('#aboutDiv').show();
+    $('#mainDiv').hide();
 
 });
 
             $('#prnt').click(function(){
     $('.child').slideDown('slow');
+    $('#aboutDiv').hide();
+    $('#mainDiv').show();
     });
 
     </script>

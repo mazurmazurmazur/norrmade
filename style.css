@@ -21,3 +21,8 @@ a{
     width: 10%;
     height: auto;
 }
+
+#aboutDiv, #mainDiv{
+    position: absolute;
+    left: 50%;
+}

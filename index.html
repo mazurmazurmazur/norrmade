@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<img src="logo.png" alt="logo1" id="logo1">
+
+<nav id="sideNav">
+<ol class="parent">
+
+    <li id="prnt"><a href="#">SHOP</a>
+        <ol class="child">
+            <li><a href="#">norrmade</a></li>
+            <li><a href="#">norrmade</a></li>
+            <li><a href="#">norrmade</a></li>
+            <li><a href="#">norrmade</a></li>
+            <li><a href="#">norrmade</a></li>
+            <li><a href="#">norrmade</a></li>
+            <li><a href="#">norrmade</a></li>
+            <li><a href="#">norrmade</a></li>
+            <li><a href="#">norrmade</a></li>
+            <li><a href="#">norrmade</a></li>
+            <li><a href="#">norrmade</a></li>
+        </ol>
+    </li>
+
+    <li id="about"><a href="#">ABOUT</a>
+
+
+</ol>
+    </nav>
+
+        <script>
+
+ $('.child').show();
+
+
+
+$('#about').click(function(){
+    $('.child').slideUp('slow');
+
+});
+
+            $('#prnt').click(function(){
+    $('.child').slideDown('slow');
+    });
+
+    </script>
+
+</body>
+</html>

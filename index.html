@@ -3,51 +3,70 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="style.css">
+    <title>Norrmade</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
 
 <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
-<img src="logo.png" alt="logo1" id="logo1">
-
-    <div id="aboutDiv">
-    <h1>ABOUT</h1>
-    <a>stuffstuffstuff</a>
-        </div>
-
-    <div id="mainDiv">
-    <h1>Main?</h1>
-    <a>stuffstuffstuff</a>
-        </div>
-
+<div class="wrapper">
+<div class="verticalMenu">
+    <div class="logo"><a href="index.html">NORRMADE</a></div>
 <nav id="sideNav">
 <ol class="parent">
-
     <li id="prnt"><a href="#">SHOP</a>
         <ol class="child">
-            <li><a href="#">norrmade</a></li>
-            <li><a href="#">norrmade</a></li>
-            <li><a href="#">norrmade</a></li>
-            <li><a href="#">norrmade</a></li>
-            <li><a href="#">norrmade</a></li>
-            <li><a href="#">norrmade</a></li>
-            <li><a href="#">norrmade</a></li>
-            <li><a href="#">norrmade</a></li>
-            <li><a href="#">norrmade</a></li>
-            <li><a href="#">norrmade</a></li>
-            <li><a href="#">norrmade</a></li>
+            <li><a href="#">bestsellers</a></li>
+            <li><a href="#">benches</a></li>
+            <li><a href="#">storage</a></li>
+            <li><a href="#">hangers</a></li>
+            <li><a href="#">decoration</a></li>
         </ol>
     </li>
-
     <li id="about"><a href="#">ABOUT</a>
-
-
 </ol>
     </nav>
-
+    <div class="socialIcons">
+        <a href="https://www.facebook.com/Norrmade/" target="_blank"><img src="icons/fb.svg"></a>
+        <a href="https://www.instagram.com/norrmade/" target="_blank"><img src="icons/insta.svg"></a>
+        <a href="https://www.pinterest.dk/norrmade/" target="_blank"><img src="icons/pin.svg"></a>
+    </div>
+</div>
+<div id="mainDiv">
+    <div class="photoBox">
+    <h1>Photo</h1>
+        </div>
+    <div class="headingBox">
+    <h1>Heading</h1>
+    <p>stuffstuffstuff</p>
+        </div>
+    <div class="instaBox">
+    <!--<h1>Insta</h1>-->
+    <img class="insta" src="https://instagram.fsjc1-3.fna.fbcdn.net/t51.2885-15/e35/18380437_1454576294616924_4560757408627949568_n.jpg" width="640" height="640" alt="instagram">
+        <div class="overlay"><div class="instaShare"><a href="https://www.instagram.com/norrmade/" target="_blank">follow</a></div></div>
+        </div>
+    <div class="videoBox">
+    <h1>Video</h1>
+        </div>
+    </div>
+    <div id="aboutDiv">
+    <div class="photoBoxA">
+    <img src="images/donkey_3.jpg" alt="donkey trolley">
+        </div>
+    <div class="headingBoxA">
+    <h1>Heading</h1>
+        </div>
+    <div class="instaBoxA">
+    <!--<h1>Insta</h1>-->
+    <img class="insta" src="https://instagram.fsjc1-3.fna.fbcdn.net/t51.2885-15/e15/16230700_1746744455641334_4885479970115158016_n.jpg" width="500" height="500" alt="instagram">
+        <div class="overlay"><div class="instaShare"><a href="https://www.instagram.com/norrmade/" target="_blank">follow</a></div></div>
+        </div>
+    <div class="videoBoxA">
+   <iframe width="704" height="396" src="https://www.youtube.com/embed/jGvsf8K1raA?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+        </div>
+    </div>
+    </div>
         <script>
 
  $('.child').show();
@@ -69,6 +88,5 @@ $('#about').click(function(){
     });
 
     </script>
-
 </body>
 </html>

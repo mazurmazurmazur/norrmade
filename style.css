@@ -1,28 +1,197 @@
+/* Table of contents
+------------------------------
+- General Content
+- Navigation
+- Typography
+- CSS Grid
+- Images & Media
+------------------------------ */
 
+/* General Content
+------------------------------ */
 
+*{box-sizing: border-box;}
+
+html{
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;}
+
+/* Navigation
+------------------------------ */
 
 ol, li {
     list-style-type: none;
     list-style:none;
     padding-left:0;
-       margin:0 0 10px 0;
+    margin:0 0 10px 0;
 }
 
-a{
+ol .child{
+    padding: 20px 10px 10px 10px;}
+
+ol .child a, .logo a{
+    font-size: 1.5em;}
+
+ol .child a, #prnt a, #about a, .logo a{
+    color: #111;
+    font-family: 'Lato', sans-serif;
     text-decoration: none;
-    font-size: 2vw;
 }
+
+#prnt a, #about a{
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+#prnt li a:hover{
+    color: #808080;}
 
 #sideNav{
-    margin-top: 10vw
+    margin-top: 10vw;
 }
 
-#logo1{
-    width: 10%;
-    height: auto;
+.parent{
+    position: fixed;
+    top: 30%;}
+
+/* Typography
+------------------------------ */
+
+/* CSS Grid
+------------------------------ */
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 6fr;
+    grid-template-areas:
+        "nav sec sec"
+        "nav sec sec";}
+
+.verticalMenu{
+    grid-area: nav;}
+
+#mainDiv{
+    grid-area: sec;
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-areas:
+        "photo photo"
+        "insta heading"
+        "insta video";
+    grid-gap: 5px;}
+
+.photoBox{
+    grid-area: photo;}
+
+.instaBox{
+    grid-area: insta;}
+
+.headingBox{
+    grid-area: heading;}
+
+.videoBox{
+    grid-area: video;}
+
+#aboutDiv{
+    grid-area: sec;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 3fr 2fr;
+    grid-template-areas:
+        "videoA videoA photoA"
+        "videoA videoA photoA"
+        "instaA headingA headingA";
+    grid-gap: 5px;}
+
+.photoBoxA{
+    grid-area: photoA;
+    width: 300px;
+    height: auto;}
+
+.instaBoxA{
+    grid-area: instaA;}
+
+.headingBoxA{
+    grid-area: headingA;}
+
+.videoBoxA{
+    grid-area: videoA;}
+
+/* Images & Media
+------------------------------ */
+
+.photoBox{
+    background-color: #b0d1cc;}
+
+.headingBox, .headingBoxA{
+    background-color: #f7f7f7;}
+
+.videoBox {
+    background-color: #f7f7f7;}
+
+.instaBox, .instaBoxA{
+    position: relative;}
+
+.insta {
+    display: block;
+    width: 100%;
+    height: auto;}
+
+.logo{
+    position: fixed;
+    top: 10px;
+    left: 10px;
 }
 
-#aboutDiv, #mainDiv{
-    position: absolute;
-    left: 50%;
+.socialIcons{
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    display: inline-block;
+    padding: 10px;}
+
+.socialIcons img{
+    width: 50px;
+    padding-right: 20px;
+   }
+
+iframe {
+ border: 0;
+}
+
+/* Overlay */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #f7f7f7;
+}
+
+.instaBox:hover .overlay {
+  opacity: 0.8;
+}
+
+.instaBoxA:hover .overlay {
+  opacity: 0.8;
+}
+
+.instaShare {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-decoration: none;
 }

@@ -10,6 +10,8 @@
 /* General Content
 ------------------------------ */
 
+
+
 *{box-sizing: border-box;}
 
 html{
@@ -220,6 +222,8 @@ img{
 .item3Box{
     grid-area: item3;}
 
-#sheepBody{
-    background-color: red;
+/*styl do sheep.html*/
+
+#mainSheep{
+
 }

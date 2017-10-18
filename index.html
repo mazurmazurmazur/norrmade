@@ -90,9 +90,18 @@ $('#about').click(function(){
 //////////////////////////
 //////CHANGE PAGE CONTENT///////
 
-            $( "#benchesButton" ).click(function() {
-  $('#mainDiv').load('benches.html #mainBenches');
-});
+            $("#benchesButton").click(function() {
+            $('#mainDiv').load('benches.html #mainBenches', function(){
+
+
+                $("#sheepPic").click(function(){
+                    $('#mainBenches').load('benches/sheep.html')
+                });
+
+            })});
+
+
+
 
 
 

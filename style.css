@@ -10,8 +10,6 @@
 /* General Content
 ------------------------------ */
 
-
-
 *{box-sizing: border-box;}
 
 html{
@@ -19,35 +17,71 @@ html{
     font-family: 'Lato', sans-serif;
     font-weight: 300;}
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Navigation
 ------------------------------ */
 
-ol, li {
+ul, li {
     list-style-type: none;
     list-style:none;
     padding-left:0;
     margin:0 0 10px 0;
 }
 
-ol .child{
+
+ul .child{
     padding: 20px 10px 10px 10px;}
 
-ol .child a, .logo a{
-    font-size: 1.5em;}
+ul .child a, .logo a{
+    font-size: 1em;}
 
-ol .child a, #prnt a, #about a, .logo a{
+.logo a{
+    float: left;
+    margin: 26px 0;}
+
+.child a, #prnt a, #about a, .logo a{
     color: #111;
     font-family: 'Lato', sans-serif;
     text-decoration: none;
 }
 
 #prnt a, #about a{
-    font-size: 1.2em;
+    float: right;
+    top: 10px;
+    font-size: 1em;
     padding: 10px;
 }
 
 #prnt li a:hover{
     color: #808080;}
+
+
+.child{
+    display: none;}
+
+.logo{
+    position: absolute;
+    top: 0px;
+    left: 10px;
+}
+.socialIcons{
+    display: none;}
+
+
+@media (min-width: 768px){
+
+ul .child a, .logo a{
+    font-size: 1.5em;}
+
+#prnt a, #about a{
+    float: left;
+    font-size: 1.2em;
+    padding: 10px;
+}
 
 #sideNav{
     margin-top: 10vw;
@@ -57,6 +91,21 @@ ol .child a, #prnt a, #about a, .logo a{
     position: fixed;
     top: 30%;}
 
+.child{
+    margin: 0;}
+
+.socialIcons{
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    display: inline-block;
+    padding: 10px;}
+
+.socialIcons img{
+    width: 50px;
+    padding-right: 20px;
+    }}
+
 /* Typography
 ------------------------------ */
 
@@ -64,8 +113,19 @@ ol .child a, #prnt a, #about a, .logo a{
 ------------------------------ */
 
 .wrapper {
+    display: flex;
+    flex-direction: column;
+flex-wrap: wrap;}
+
+#aboutDiv{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;}
+
+@media (min-width: 768px){
+
+.wrapper {
     display: grid;
-    grid-gap: 10px;
     grid-template-columns: 1fr 6fr;
     grid-template-areas:
         "nav sec sec"
@@ -109,9 +169,7 @@ ol .child a, #prnt a, #about a, .logo a{
     grid-gap: 5px;}
 
 .photoBoxA{
-    grid-area: photoA;
-    width: 300px;
-    height: auto;}
+    grid-area: photoA;}
 
 .instaBoxA{
     grid-area: instaA;}
@@ -120,7 +178,7 @@ ol .child a, #prnt a, #about a, .logo a{
     grid-area: headingA;}
 
 .videoBoxA{
-    grid-area: videoA;}
+    grid-area: videoA;}}
 
 /* Images & Media
 ------------------------------ */
@@ -134,6 +192,12 @@ ol .child a, #prnt a, #about a, .logo a{
 .videoBox {
     background-color: #f7f7f7;}
 
+iframe {
+ border: 0;
+}
+
+/* Overlay */
+
 .instaBox, .instaBoxA{
     position: relative;}
 
@@ -141,30 +205,6 @@ ol .child a, #prnt a, #about a, .logo a{
     display: block;
     width: 100%;
     height: auto;}
-
-.logo{
-    position: fixed;
-    top: 10px;
-    left: 10px;
-}
-
-.socialIcons{
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
-    display: inline-block;
-    padding: 10px;}
-
-.socialIcons img{
-    width: 50px;
-    padding-right: 20px;
-   }
-
-iframe {
- border: 0;
-}
-
-/* Overlay */
 
 .overlay {
   position: absolute;
@@ -177,6 +217,7 @@ iframe {
   opacity: 0;
   transition: .5s ease;
   background-color: #f7f7f7;
+  z-index: 98;
 }
 
 .instaBox:hover .overlay {
@@ -198,12 +239,28 @@ iframe {
   text-decoration: none;
 }
 
+/* Instagram Button */
+
+.button {
+    background-color: #b0d1cc;
+	border: 2px solid #b0d1cc;
+	display: inline-block;
+	cursor: pointer;
+	color: #fff;
+	font-family: 'Lato', sans-serif;
+	font-size: 17px;
+	padding: 8px 36px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #fff;
+}
+
+.button:active {
+	position:relative;
+	top:1px;
+}
+
 /* styl do benches.html*/
 
-img{
-    max-width: 100%;
-        height: auto;
-}
 #mainBenches{
     grid-area: sec;
     display: grid;
@@ -221,6 +278,7 @@ img{
 
 .item3Box{
     grid-area: item3;}
+
 
 /*styl do sheep.html*/
 

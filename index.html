@@ -19,7 +19,7 @@
     <li id="prnt"><a href="#">SHOP</a>
         <ol class="child">
             <li><a href="#">bestsellers</a></li>
-            <li><a href="#">benches</a></li>
+            <li><a id="benchesButton" href="#">benches</a></li>
             <li><a href="#">storage</a></li>
             <li><a href="#">hangers</a></li>
             <li><a href="#">decoration</a></li>
@@ -69,7 +69,7 @@
     </div>
     </div>
         <script>
-
+//////MENU////////////////
  $('.child').show();
 $('#aboutDiv').hide();
 
@@ -87,6 +87,14 @@ $('#about').click(function(){
     $('#aboutDiv').hide();
     $('#mainDiv').show();
     });
+//////////////////////////
+//////CHANGE PAGE CONTENT///////
+
+            $( "#benchesButton" ).click(function() {
+  $('#mainDiv').load('benches.html #mainBenches');
+});
+
+
 
     </script>
 </body>

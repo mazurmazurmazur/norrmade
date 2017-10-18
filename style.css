@@ -219,3 +219,7 @@ img{
 
 .item3Box{
     grid-area: item3;}
+
+#sheepBody{
+    background-color: red;
+}

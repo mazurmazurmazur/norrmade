@@ -290,6 +290,8 @@ iframe {
 .item6Box{
     grid-area: item6;}}
 
+
+
 /* Product Page */
 
 #mainProduct{
@@ -332,4 +334,53 @@ iframe {
     background-color: #b0d1cc;
     color: #fff;
     padding: 10px 30px;}
+
+
+/*picture redirection*/
+
+
+
+.item1Box {
+    position:relative;
+        z-index: 10;
+}
+
+.whiteSquare{
+    transition: 1s ease;
+    opacity: 0;
+    position: absolute;
+    left: 5%;
+    text-align:center;
+    top: 5%;
+    width: 90%;
+    max-height: 70%;
+    font-size: 1.4vw;
+}
+
+.item1Box:hover .whiteSquare{
+    opacity: 1;
+}
+
+.productClass{
+    z-index: 0;
+    transition: 1s ease;
+}
+
+
+.item1Box:hover .productClass{
+    opacity: 0.3;
+}
+
+.item1Box:hover .buttonText{
+    opacity: 1;
+}
+
+.prodButton{
+    transition: .5s ease;
+     border: solid;
+    margin: 1vw;
+    padding: 0.5vw;
+    text-decoration: none;
+    color: black;
+}
 

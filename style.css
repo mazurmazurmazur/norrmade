@@ -46,7 +46,6 @@ ul .child a, .logo a{
     font-size: 1em;}
 
 .logo a{
-    position: fixed;
     margin: 260px 0;
     }
 
@@ -71,13 +70,9 @@ ul .child a, .logo a{
     display: none;}
 
 .logo{
-    top: 0px;
+    top: 50px;
     left: 10px;
 }
-
-    #logo {
-    position: fixed;
-    }
 
 .socialIcons{
     display: none;}}
@@ -106,7 +101,7 @@ ul .child a, #prnt a, #about a, .logo a{
 
 #prnt a, #about a{
     font-size: 1.5em;
-    padding: 50px;
+    padding: 1em;
 }
     #about a, .shop{
     font-weight: 400;
@@ -162,7 +157,7 @@ flex-wrap: wrap;}
 
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr 1.25fr 1.25fr;
+    grid-template-columns: 0.74fr 2fr 1fr;
     grid-template-areas:
         "nav sec sec";
         "nav sec sec";}
@@ -173,13 +168,12 @@ flex-wrap: wrap;}
 #mainDiv{
     grid-area: sec;
     display: grid;
-    grid-template-columns: 6fr 3fr;
+    grid-template-columns: 7fr 2.96fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
         "insta heading"
         "insta video";
     grid-gap: 5px;
-    max-height: 100%;
     }
 .photoBox{
     grid-area: photo;

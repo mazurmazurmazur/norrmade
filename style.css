@@ -145,25 +145,30 @@ flex-wrap: wrap;}
 #mainDiv{
     grid-area: sec;
     display: grid;
-    grid-template-columns: 5fr 3fr;
-    grid-template-rows: 2fr 2fr 4fr;
+    grid-template-columns: 4fr 2fr;
+    grid-template-rows: 0fr 1fr 1fr;
     grid-template-areas:
         "photo photo"
         "insta heading"
         "insta video";
-    grid-gap: 5px;}
-
+    grid-gap: 5px;
+    }
 .photoBox{
-    grid-area: photo;}
+    grid-area: photo;
+    }
 
 .instaBox{
-    grid-area: insta;}
+    grid-area: insta;
+    height: 100%}
 
 .headingBox{
-    grid-area: heading;}
-
+    grid-area: heading;
+    margin-left: 5px;
+    margin-bottom: 5px;}
+/**/
 .videoBox{
-    grid-area: video;}
+    grid-area: video;
+    margin-left: 5px;}
 
 #aboutDiv{
     grid-area: sec;

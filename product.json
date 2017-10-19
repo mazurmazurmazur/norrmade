@@ -1,0 +1,19 @@
+
+[
+    {
+        "id": "Bottlight_2",
+        "name": "The bottlight candle holder",
+        "description": "For some cultures tea-light candles are a vital part of both the indoor and outdoor decoration and no other type of candle has such a multi-purpose function. Since it is always needed, it must therefore be easily accessible. Bottlight is like a cartridge waiting and ready for the next one to be fired up!",
+        "details": ["Smoked glass", "Polished stainless steel", "B:119mm x H:129mm"],
+        "design": "In the Nordic countries, we use candles indoors the whole year round. It makes good sense that we compensate for our dark winters with warm flames that light up the twilight. And when the tea light has to be changed on a daily basis, it is practical to keep them close to the candleholder. So why not have a candleholder with built-in storage for tea lights? That is how Bottlight was created.",
+        "price":"€ 29.00"
+    },
+    {
+        "id": "Column_2",
+        "name": "The column candle holder",
+        "description": "The Column floor standing wooden candle holder is the perfect all rounder. The height of it make it usable almost anywhere and the brightness of the solid ash wood make a beautiful contrast to the lighted candle.Tall candle holder stands firm on the floor and it is not only for a candle as a block candle but also as a candlestick. The design also allows it to be used to place a cup, glass or anything that will fit on the top of the copper holder.",
+        "details": ["Floor standing wooden candle holder", "Clear, oiled, solid ash", "Holder in copper", "H70 x D: Top 11cm/18 bund"],
+        "design": "Each tree trunk has its own completely unique grain formed by the wind and weather throughout its development. It is not visible on the outside, but when the trunk is split, the grain becomes visible. However, the tree’s grain is most beautiful when it is formed using a lathe, so that the grain displays wave patterns on the surface. Column tall candle stand is more than a good excuse for bringing a beautiful piece of wood into the home. We have formed it as a classic candleholder, and it can hold both candlesticks and block candles and in this way can create warmth and a cosy feeling both day and night.",
+        "price": "€225.00"
+    }
+]

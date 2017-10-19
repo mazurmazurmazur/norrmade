@@ -25,6 +25,8 @@ img {
 /* Navigation
 ------------------------------ */
 
+@media (max-width: 768px){
+
 ul, li {
     list-style-type: none;
     list-style:none;
@@ -69,19 +71,37 @@ ul .child a, .logo a{
     left: 10px;
 }
 .socialIcons{
-    display: none;}
+    display: none;}}
 
 
 @media (min-width: 768px){
 
+ul, li {
+    list-style-type: none;
+    list-style:none;
+    padding-left:0;
+    margin:0 0 10px 0;
+}
+
+ul .child{
+    padding: 20px 10px 10px 10px;}
+
 ul .child a, .logo a{
     font-size: 1.5em;}
 
+ul .child a, #prnt a, #about a, .logo a{
+    color: #111;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+}
+
 #prnt a, #about a{
-    float: left;
     font-size: 1.2em;
     padding: 10px;
 }
+
+#prnt li a:hover{
+    color: #808080;}
 
 #sideNav{
     margin-top: 10vw;
@@ -91,20 +111,8 @@ ul .child a, .logo a{
     position: fixed;
     top: 30%;}
 
-.child{
-    margin: 0;}
-
 .socialIcons{
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
-    display: inline-block;
-    padding: 10px;}
-
-.socialIcons img{
-    width: 50px;
-    padding-right: 20px;
-    }}
+    display: none;}}
 
 /* Typography
 ------------------------------ */
@@ -183,8 +191,26 @@ flex-wrap: wrap;}
 /* Images & Media
 ------------------------------ */
 
+.videoBoxA{
+    display: none;}
+
+.videoBoxB{
+    display: block;}
+
+@media (min-width: 768px){
+
+.videoBoxA{
+    display: block;}
+
+.videoBoxB{
+    display: none;
+    }
+
 .headingBox, .headingBoxA{
-    background-color: #f7f7f7;}
+    background-color: #f7f7f7;
+    color: #111;
+    text-decoration: none;
+    padding: 15px 30px;}
 
 .videoBox {
     background-color: #f7f7f7;}
@@ -323,17 +349,27 @@ iframe {
 .productButtons, .priceButtons{
     display: inline-block;}
 
-
-
-.productButtons a, .priceButtons a{
+ .priceButtons a{
     color: #111;
     text-decoration: none;
     margin: 0 15px 0 0;}
 
-.buyNow {
+.buyNow, .calltoAction {
     background-color: #b0d1cc;
-    color: #fff;
-    padding: 10px 30px;}
+    color: #111;
+    font-size: 1em;
+    padding: 6px 36px;
+    text-decoration: none;}
+
+.buyNow:hover{
+    color: #fff;}
+
+.calltoAction:hover{
+    color: #fff;}
+
+.descriptionButton, .detailsButton, .designButton {
+    color: #111;
+    text-decoration: none;}
 
 
 /*picture redirection*/

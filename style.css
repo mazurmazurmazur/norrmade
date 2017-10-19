@@ -293,6 +293,16 @@ iframe {
 /* Product Page */
 
 #mainProduct{
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column-reverse;}
+
+.productDescription{
+    padding: 1.2em;}
+
+@media (min-width: 768px){
+
+#mainProduct{
     grid-area: sec;
     display: grid;
     grid-template-columns: 2fr 2fr;
@@ -304,4 +314,22 @@ iframe {
     grid-area: des;}
 
 .productImage{
-    grid-area: ima;}
+    grid-area: ima;}}
+
+/* Product Buttons */
+
+.productButtons, .priceButtons{
+    display: inline-block;}
+
+
+
+.productButtons a, .priceButtons a{
+    color: #111;
+    text-decoration: none;
+    margin: 0 15px 0 0;}
+
+.buyNow {
+    background-color: #b0d1cc;
+    color: #fff;
+    padding: 10px 30px;}
+

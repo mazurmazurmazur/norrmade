@@ -80,6 +80,7 @@ ul .child a, .logo a{
 .logo{
     top: 50px;
     left: 10px;
+    width: 70%;
 }
 
 .socialIcons{
@@ -127,7 +128,13 @@ ul .child a, #prnt a, #about a, .logo a{
     top: 25%;
     }
 .socialIcons{
-    display: none;}}
+    display: none;}
+
+.logo {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 70%;
+    }}
 
 /* Typography
 ------------------------------ */

@@ -74,11 +74,22 @@
     </div>
         <script>
 //////MENU////////////////
- $('.child').show();
+              $('.child').show()
+
+            if($(window).width() < 768){
+                $('.child').hide()
+            }
+
+      $(window).resize(function(){
+
+
+ $('.child').hide();
+
+              });
+
+
+
 $('#aboutDiv').hide();
-
-
-
 $('#about').click(function(){
     $('.child').slideUp('slow');
     $('#aboutDiv').show();
@@ -91,12 +102,18 @@ $('#about').click(function(){
     $('#aboutDiv').hide();
     $('#mainDiv').show();
     });
+
 //////////////////////////
 //////CHANGE PAGE CONTENT///////
 
 
       $("#benchesButton").click(function() {
              $('#mainDiv').load('benches.html #mainBenches', function(){
+
+                 if($(window).width() < 768){
+                $('.child').hide()
+            }
+
 
                  $(".item1Box .whiteSquare .detailButton").click(function(){
                      $('#mainBenches').load('/product.html')
@@ -129,6 +146,10 @@ $('#about').click(function(){
              $('#mainDiv').load('bestsellers.html #mainBestsellers', function(){
 
 
+                 if($(window).width() < 768){
+                $('.child').hide()
+            }
+
                  $(".item1Box .whiteSquare .detailButton").click(function(){
                      $('#mainBestsellers').load('/product.html')
                  });
@@ -156,6 +177,10 @@ $('#about').click(function(){
       $("#storageButton").click(function() {
              $('#mainDiv').load('storage.html #mainStorage', function(){
 
+
+                 if($(window).width() < 768){
+                $('.child').hide()
+            }
 
                  $(".item1Box .whiteSquare .detailButton").click(function(){
                      $('#mainStorage').load('/product.html')
@@ -192,6 +217,10 @@ $('#about').click(function(){
                   $("#hangersButton").click(function() {
              $('#mainDiv').load('hangers.html #mainHangers', function(){
 
+                 if($(window).width() < 768){
+                $('.child').hide()
+            }
+
                  $(".item1Box .whiteSquare .detailButton").click(function(){
                      $('#mainHangers').load('/product.html')
                  });
@@ -227,6 +256,10 @@ $('#about').click(function(){
                   $("#decorationButton").click(function() {
             $('#mainDiv').load('decoration.html #mainDecoration', function(){
 
+
+                if($(window).width() < 768){
+                $('.child').hide()
+            }
 
                  $(".item2Box .whiteSquare .detailButton").click(function(){
                      $('#mainDecoration').load('/product.html')

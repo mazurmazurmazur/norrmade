@@ -20,6 +20,7 @@ html{
     font-family: 'Lato', sans-serif;
     font-weight: 300;}
 
+
 img {
     max-width: 100%;
     height: auto;
@@ -53,8 +54,9 @@ ul .child a, .logo a{
     font-size: 1em;}
 
 .logo a{
-    float: left;
-    margin: 26px 0;}
+    position: fixed;
+    margin: 260px 0;
+    }
 
 .child a, #prnt a, #about a, .logo a{
     color: #111;
@@ -77,10 +79,14 @@ ul .child a, .logo a{
     display: none;}
 
 .logo{
-    position: absolute;
     top: 0px;
     left: 10px;
 }
+
+    #logo {
+    position: fixed;
+    }
+
 .socialIcons{
     display: none;}}
 
@@ -107,9 +113,12 @@ ul .child a, #prnt a, #about a, .logo a{
 }
 
 #prnt a, #about a{
-    font-size: 1.2em;
-    padding: 10px;
+    font-size: 1.5em;
+    padding: 50px;
 }
+    #about a, .shop{
+    font-weight: 400;
+    }
 
 #prnt li a:hover{
     color: #808080;}
@@ -120,8 +129,8 @@ ul .child a, #prnt a, #about a, .logo a{
 
 .parent{
     position: fixed;
-    top: 30%;}
-
+    top: 25%;
+    }
 .socialIcons{
     display: none;}}
 
@@ -131,10 +140,18 @@ body {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
 }
+h1 {
+    font-weight: 300;
+}
+h2 {
+    font-weight: 100;
+}
 
 h3 {
  font-weight: 400;
 }
+
+
 
 /* CSS Grid
 ------------------------------ */
@@ -153,9 +170,9 @@ flex-wrap: wrap;}
 
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 1fr 1.25fr 1.25fr;
     grid-template-areas:
-        "nav sec sec"
+        "nav sec sec";
         "nav sec sec";}
 
 .verticalMenu{
@@ -164,13 +181,13 @@ flex-wrap: wrap;}
 #mainDiv{
     grid-area: sec;
     display: grid;
-    grid-template-columns: 4fr 2fr;
-    grid-template-rows: 0fr 1fr 1fr;
+    grid-template-columns: 6fr 3fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:
-        "photo photo"
         "insta heading"
         "insta video";
     grid-gap: 5px;
+    max-height: 100%;
     }
 .photoBox{
     grid-area: photo;

@@ -203,7 +203,8 @@ flex-wrap: wrap;}
     display: block;}
 
 .videoBoxB{
-    display: none;}
+    display: none;
+    }
 
 .headingBox, .headingBoxA{
     background-color: #f7f7f7;

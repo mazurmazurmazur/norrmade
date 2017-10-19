@@ -290,9 +290,18 @@ iframe {
 .item6Box{
     grid-area: item6;}}
 
+/* Product Page */
 
-/*styl do sheep.html*/
+#mainProduct{
+    grid-area: sec;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas:
+        "des ima";
+    grid-gap: 5px;}
 
-#mainSheep{
+.productDescription{
+    grid-area: des;}
 
-}
+.productImage{
+    grid-area: ima;}

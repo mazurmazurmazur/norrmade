@@ -376,7 +376,7 @@ iframe {
 
 
 
-.item1Box {
+.itemBox {
     height: 99%;
     position:relative;
     z-index: 10;
@@ -399,7 +399,7 @@ iframe {
     transform: translate(0px, 30px);
 }
 
-.item1Box:hover .whiteSquare{
+.itemBox:hover .whiteSquare{
     opacity: 1;
     transform: translate(0px, 0px);
 
@@ -411,11 +411,11 @@ iframe {
 }
 
 
-.item1Box:hover .productClass{
+.itemBox:hover .productClass{
     opacity: 0.3;
 }
 
-.item1Box:hover .buttonText{
+.itemBox:hover .buttonText{
     opacity: 1;
 }
 

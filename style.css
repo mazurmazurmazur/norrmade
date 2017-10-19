@@ -255,7 +255,13 @@ iframe {
 	top:1px;
 }
 
-/* styl do benches.html*/
+/* Subpages */
+
+#mainBenches, #mainBestsellers, #mainStorage, #mainHangers, #mainDecoration{
+    display: flex;
+    flex-direction: column;}
+
+@media (min-width: 768px){
 
 #mainBenches, #mainBestsellers, #mainStorage, #mainHangers, #mainDecoration{
     grid-area: sec;
@@ -282,7 +288,7 @@ iframe {
     grid-area: item5;}
 
 .item6Box{
-    grid-area: item6;}
+    grid-area: item6;}}
 
 
 /*styl do sheep.html*/

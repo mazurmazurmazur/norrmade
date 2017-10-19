@@ -9,21 +9,53 @@
 </head>
 <body>
     <div id="mainProduct">
-        <div class="productDescription">
-                <h2>The Sheep Bench</h2>
-            <div class="productButtons">
+        <section id="productsList"></section>
+        <template id="productsTemplate">
+            <div class="productDescription"><article class="product">
+                <h2 class="name">The Sheep Bench</h2>
                 <a href="#" class="descriptionButton">DESCRIPTION</a>
+            <p class="description">DES</p>
                 <a href="#" class="detailsButton">DETAILS</a>
+            <p class="details">DETAILS</p>
                 <a href="#" class="designButton">DESIGN</a>
-            </div>
-            <p>In the world of animals, a tail has many functions - such as to communicate to the outside world. Sheep prays almost about being moved from one room to another and offers so many uses that it almost deserves that someone seizes it.</p>
+            <p class="design">DESIGN</p>
             <div class="priceButtons">
-                <a href="#" class="price">$ 2000</a>
+                <a href="#" class="price">PRICE</a>
                 <a href="#" class="buyNow">buy</a>
+                </div>
+                </article>
             </div>
-        </div>
-        <div class="productImage"><img src="images/square/benches/Square_Sheep_2.jpg" alt="the sheep bench black"></div>
+        </template>
+            <div class="productImage"><img src="images/square/benches/Square_Sheep_2.jpg" alt="the sheep bench black"></div>
     </div>
+  <script>
 
+    let productsTemplate = document.querySelector('#productsTemplate').content;
+    let section = document.querySelector('#productsList');
+    let product = document.querySelector('.product');
+
+          function getData() {
+            fetch("product.json").then(function (response) {
+                return response.json();
+            }).then(function (json) {
+                return show(json);
+            });
+        }
+
+        function show(json) {
+            json.forEach(function(product){
+                let clone = productsTemplate.cloneNode(true);
+                clone.querySelector('.name').textContent=product.name;
+                clone.querySelector('.description').textContent=product.description;
+
+                clone.querySelector('.details').innerHTML = product.details.join('<br/>');
+                clone.querySelector('.design').textContent=product.design;
+                clone.querySelector('.price').textContent=product.price;
+
+                section.appendChild(clone);
+            });
+        }
+        getData("product.json");
+        </script>
 </body>
 </html>

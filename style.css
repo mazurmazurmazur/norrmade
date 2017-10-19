@@ -332,7 +332,7 @@ iframe {
 .productButtons, .priceButtons{
     display: inline-block;}
 
-.productButtons a, .priceButtons a{
+ .priceButtons a{
     color: #111;
     text-decoration: none;
     margin: 0 15px 0 0;}
@@ -349,4 +349,8 @@ iframe {
 
 .calltoAction:hover{
     color: #fff;}
+
+.descriptionButton, .detailsButton, .designButton {
+    color: #111;
+    text-decoration: none;}
 

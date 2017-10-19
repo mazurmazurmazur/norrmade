@@ -191,6 +191,20 @@ flex-wrap: wrap;}
 /* Images & Media
 ------------------------------ */
 
+.videoBoxA{
+    display: none;}
+
+.videoBoxB{
+    display: block;}
+
+@media (min-width: 768px){
+
+.videoBoxA{
+    display: block;}
+
+.videoBoxB{
+    display: none;}
+
 .headingBox, .headingBoxA{
     background-color: #f7f7f7;
     color: #111;

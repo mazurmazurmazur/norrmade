@@ -145,8 +145,8 @@ flex-wrap: wrap;}
 #mainDiv{
     grid-area: sec;
     display: grid;
-    grid-template-columns: 3fr 3fr;
-    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-columns: 5fr 3fr;
+    grid-template-rows: 2fr 2fr 4fr;
     grid-template-areas:
         "photo photo"
         "insta heading"
@@ -368,4 +368,3 @@ iframe {
 .descriptionButton, .detailsButton, .designButton {
     color: #111;
     text-decoration: none;}
-

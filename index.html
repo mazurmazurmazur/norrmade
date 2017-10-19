@@ -18,11 +18,11 @@
 <ul class="parent">
     <li id="prnt"><a href="#">SHOP</a>
         <ul class="child">
-            <li><a href="#">bestsellers</a></li>
+            <li><a id="bestsellersButton" href="#">bestsellers</a></li>
             <li><a id="benchesButton" href="#">benches</a></li>
-            <li><a href="#">storage</a></li>
-            <li><a href="#">hangers</a></li>
-            <li><a href="#">decoration</a></li>
+            <li><a id="storageButton" href="#">storage</a></li>
+            <li><a id="hangersButton" href="#">hangers</a></li>
+            <li><a id="decorationButton" href="#">decoration</a></li>
         </ul>
     </li>
     <li id="about"><a href="#">ABOUT</a>
@@ -36,7 +36,7 @@
 </div>
 <div id="mainDiv">
     <div class="photoBox">
-    <h1>Photo</h1>
+        <img src=images/Landscape_1.png>
         </div>
     <div class="headingBox">
     <h1>Heading</h1>
@@ -90,20 +90,27 @@ $('#about').click(function(){
 //////////////////////////
 //////CHANGE PAGE CONTENT///////
 
-            $("#benchesButton").click(function() {
-            $('#mainDiv').load('benches.html #mainBenches', function(){
+            $("#bestsellersButton").click(function() {
+            $('#mainDiv').load('bestsellers.html #mainBestsellers', function(){
 
 
                 $("#sheepPic").click(function(){
-                    $('#mainBenches').load('benches/sheep.html')
+                    $('#mainBestsellers').load('benches/sheep.html')
                 });
 
             })});
 
+            $("#benchesButton").click(function() {
+            $('#mainDiv').load('benches.html #mainBenches')});
 
+            $("#storageButton").click(function() {
+            $('#mainDiv').load('storage.html #mainStorage')});
 
+            $("#hangersButton").click(function() {
+            $('#mainDiv').load('hangers.html #mainHangers')});
 
-
+            $("#decorationButton").click(function() {
+            $('#mainDiv').load('decoration.html #mainDecoration')});
 
     </script>
 </body>

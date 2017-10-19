@@ -163,9 +163,9 @@ flex-wrap: wrap;}
     grid-template-columns: 2fr 2fr 2fr;
     grid-template-rows: 3fr 2fr;
     grid-template-areas:
-        "videoA videoA photoA"
-        "videoA videoA photoA"
-        "instaA headingA headingA";
+        "videoA videoA headingA"
+        "videoA videoA headingA"
+        "instaA photoA photoA";
     grid-gap: 5px;}
 
 .photoBoxA{
@@ -182,9 +182,6 @@ flex-wrap: wrap;}
 
 /* Images & Media
 ------------------------------ */
-
-.photoBox{
-    background-color: #b0d1cc;}
 
 .headingBox, .headingBoxA{
     background-color: #f7f7f7;}
@@ -217,7 +214,6 @@ iframe {
   opacity: 0;
   transition: .5s ease;
   background-color: #f7f7f7;
-  z-index: 98;
 }
 
 .instaBox:hover .overlay {
@@ -261,7 +257,7 @@ iframe {
 
 /* styl do benches.html*/
 
-#mainBenches{
+#mainBenches, #mainBestsellers, #mainStorage, #mainHangers, #mainDecoration{
     grid-area: sec;
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;

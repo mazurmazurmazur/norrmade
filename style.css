@@ -262,18 +262,27 @@ iframe {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
     grid-template-areas:
-        "item1 item2 item3";
+        "item1 item2 item3"
+        "item4 item5 item6";
     grid-gap: 5px;}
 
 .item1Box{
-    grid-area: item1;
-}
+    grid-area: item1;}
 
 .item2Box{
     grid-area: item2;}
 
 .item3Box{
     grid-area: item3;}
+
+.item4Box{
+    grid-area: item4;}
+
+.item5Box{
+    grid-area: item5;}
+
+.item6Box{
+    grid-area: item6;}
 
 
 /*styl do sheep.html*/

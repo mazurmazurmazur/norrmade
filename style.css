@@ -154,10 +154,17 @@ h2 {
 }
 
 h3 {
- font-weight: 400;
+ font-weight: 100;
+  font-size: 1.5em;
 }
 .arrivals {
 font-weight: 600;
+}
+
+.itemDescription {
+        font-weight: 100;
+    font-size: 1em;
+
 }
 
 
@@ -437,7 +444,8 @@ iframe {border: 0;}
     opacity: 0.3;}
 
 .itemBox:hover .buttonText{
-    opacity: 1;}
+    opacity: 1;
+    font-weight: 400;}
 
 .prodButton{
     transition: .5s ease;

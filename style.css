@@ -189,6 +189,10 @@ font-weight: 600;
 
 }
 
+.price, .buyNow, .boldH2 {
+
+font-weight: 600;}
+
 /* typography mobile */
 @media (max-width: 768px){
 

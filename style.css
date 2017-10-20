@@ -265,30 +265,30 @@ iframe {border: 0;}
 /* Overlay */
 
 .instaBox{
-    position: relative;}
+    position: relative;
+    width: 100%;}
 
 .insta {
     display: block;
     width: 100%;
-    height: auto;}
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;}
 
 .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
+transition: .5s ease;
   opacity: 0;
-  transition: .5s ease;
-  background-color: #f7f7f7;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 .instaBox:hover .insta {
   opacity: 0.3;}
 
-.instaBox:hover .middle {
+.instaBox:hover .overlay {
   opacity: 1;}
 
 .instaShare {
@@ -305,7 +305,7 @@ iframe {border: 0;}
 /* Instagram Button */
 
 .button {
-	border: 1px solid;
+	border: 1px solid #111;
 	display: inline-block;
 	cursor: pointer;
 	color: #111;
@@ -313,7 +313,6 @@ iframe {border: 0;}
 	font-size: 17px;
 	padding: 8px 36px;
 	text-decoration: none;
-	text-shadow: 0px 1px 0px #fff;
 }
 
 .button:active {

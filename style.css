@@ -168,6 +168,11 @@ font-weight: 600;
     font-size: 1em;
 }
 
+.aboutFont {
+    font-size: 1.1em;
+
+}
+
 /* typography mobile */
 @media (max-width: 768px){
 

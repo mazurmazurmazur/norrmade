@@ -53,8 +53,8 @@ ul .child{
 ul .child a, .logo a{
     font-size: 1em;}
 
-.logo a{
-    margin: 260px 0;
+.logo{
+display: none;
     }
 
 .child a, #prnt a, #about a, .logo a{

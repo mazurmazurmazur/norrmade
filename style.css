@@ -129,8 +129,25 @@ ul .child a, #prnt a, #about a, .logo a{
     position: fixed;
     top: 25%;
     }
-.socialIcons{
-    display: none;}
+
+    .fb{
+    margin-left: 60px;
+    bottom: 10px;
+    position: fixed;
+    width: 30px;}
+
+    .ins {
+    margin-left: 100px;
+    bottom: 10px;
+    position: fixed;
+    width: 30px;}}
+
+    .pint {
+    margin-left: 140px;
+    bottom: 10px;
+    position: fixed;
+    width: 30px;}}
+}
 
 .logo {
     margin-left: 20px;

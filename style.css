@@ -164,11 +164,7 @@ font-weight: 600;
 .itemDescription {
         font-weight: 100;
     font-size: 1em;
-
 }
-
-
-
 
 /* CSS Grid
 ------------------------------ */
@@ -180,8 +176,12 @@ flex-wrap: wrap;}
 
 #aboutDiv{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     flex-wrap: wrap;}
+
+.videoBoxA{
+    margin-bottom: 100px;}
+
 
 @media (min-width: 768px){
 

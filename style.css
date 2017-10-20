@@ -203,13 +203,49 @@ font-weight: 600;
     flex-direction: column;
 flex-wrap: wrap;}
 
+#mainDiv{
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-areas:
+        "insta"
+        "heading"
+        "video";
+    grid-gap: 5px;}
+
+.instaBox{
+    grid-area: insta;}
+
+.headingBox{
+    grid-area: heading;}
+
+.videoBox{
+    grid-area: video;}
+
 #aboutDiv{
-    display: flex;
-    flex-direction: column-reverse;
-    flex-wrap: wrap;}
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-areas:
+        "videoA"
+        "headingA"
+        "instaA"
+        "instaB"
+        "instaC";
+    grid-gap: 5px;}
 
 .videoBoxA{
-    margin-bottom: 100px;}
+    grid-area: videoA;}
+
+.instaBoxA{
+    grid-area: instaA;}
+
+.instaBoxB{
+    grid-area: instaB;}
+
+.instaBoxC{
+    grid-area: instaC;}
+
+.headingBoxA{
+    grid-area: headingA;}
 
 
 @media (min-width: 768px){

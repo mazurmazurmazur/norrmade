@@ -3,59 +3,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Page</title>
+    <title>Norrmade | The Sheep</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
 <body>
     <div id="mainProduct">
-        <section id="productsList"></section>
-        <template id="productsTemplate">
-            <div class="productDescription"><article class="product">
-                <h2 class="name">The Sheep Bench</h2>
-                <a href="#" class="descriptionButton">DESCRIPTION</a>
-            <p class="description">DES</p>
-                <a href="#" class="detailsButton">DETAILS</a>
-            <p class="details">DETAILS</p>
-                <a href="#" class="designButton">DESIGN</a>
-            <p class="design">DESIGN</p>
+
+
+            <div class="productDescription">
+                <h1 class="arrivals">The Sheep Bench</h1>
+                <h2>DESCRIPTION</h2>
+            <p class="description">In the animal world a tail has many functions. One of them is to signal something with it. Sheep is asking to be pulled from one room to another where it can offer so many different ways of being used that it should be given the opportunity to do so.</p>
+                <h2>DETAILS</h2>
+            <p class="details">Oil-treated ash.<br>Black lacquered.<br>Felt seat with natural wood legs.</p>
             <div class="priceButtons">
-                <a href="#" class="price">PRICE</a>
+                <a href="#" class="price">€ 198.00</a>
                 <a href="#" class="buyNow">buy</a>
                 </div>
-                </article>
             </div>
-        </template>
             <div class="productImage"><img src="images/square/benches/Square_Sheep_2.jpg" alt="the sheep bench black"></div>
     </div>
-  <script>
-
-    let productsTemplate = document.querySelector('#productsTemplate').content;
-    let section = document.querySelector('#productsList');
-    let product = document.querySelector('.product');
-
-          function getData() {
-            fetch("product.json").then(function (response) {
-                return response.json();
-            }).then(function (json) {
-                return show(json);
-            });
-        }
-
-        function show(json) {
-            json.forEach(function(product){
-                let clone = productsTemplate.cloneNode(true);
-                clone.querySelector('.name').textContent=product.name;
-                clone.querySelector('.description').textContent=product.description;
-
-                clone.querySelector('.details').innerHTML = product.details.join('<br/>');
-                clone.querySelector('.design').textContent=product.design;
-                clone.querySelector('.price').textContent=product.price;
-
-                section.appendChild(clone);
-            });
-        }
-        getData("product.json");
-        </script>
 </body>
 </html>

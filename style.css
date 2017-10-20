@@ -222,6 +222,9 @@ flex-wrap: wrap;}
     grid-area: video;
     margin-left: 5px;}
 
+.videoBoxA{
+    margin-bottom: 0;}
+
 #aboutDiv{
     grid-area: sec;
     display: grid;

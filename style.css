@@ -144,14 +144,22 @@ body {
 }
 h1 {
     font-weight: 300;
+    font-size: 2em;
 }
 h2 {
     font-weight: 100;
+    font-size: 1em;
+    margin-top 70px;
+    margin-bottom: 30px;
 }
 
 h3 {
  font-weight: 400;
 }
+.arrivals {
+font-weight: 600;
+}
+
 
 
 
@@ -290,11 +298,10 @@ iframe {border: 0;}
 /* Instagram Button */
 
 .button {
-    background-color: #b0d1cc;
-	border: 2px solid #b0d1cc;
+	border: 1px solid;
 	display: inline-block;
 	cursor: pointer;
-	color: #fff;
+	color: #111;
 	font-family: 'Lato', sans-serif;
 	font-size: 17px;
 	padding: 8px 36px;
@@ -379,7 +386,7 @@ iframe {border: 0;}
     margin: 0 15px 0 0;}
 
 .buyNow, .calltoAction {
-    background-color: #b0d1cc;
+    border: solid 1px;
     color: #111;
     font-family: 'Lato', sans-serif;
     font-weight: 100;
@@ -388,10 +395,10 @@ iframe {border: 0;}
     text-decoration: none;}
 
 .buyNow:hover{
-    color: #fff;}
+    color: #111;}
 
 .calltoAction:hover{
-    color: #fff;}
+    color: #111;}
 
 .descriptionButton, .detailsButton, .designButton {
     color: #111;

@@ -40,13 +40,15 @@ ul, li {
 
 
 ul .child{
-    padding: 20px 10px 10px 10px;
-
+margin-top: 25px;
+    padding: 20px;
+    width: 140px;
     position: absolute;
     right: 0%;
     top: 10%;
     display: inline-block;
-    background: red;
+    background: #f1f1f1;
+    z-index: 99;
 
     }
 
@@ -165,6 +167,33 @@ font-weight: 600;
         font-weight: 100;
     font-size: 1em;
 }
+
+/* typography mobile */
+@media (max-width: 768px){
+
+   h3 {
+ font-weight: 100;
+  font-size: 7.5em;
+}
+ .itemDescription {
+    font-weight: 100;
+    font-size: 3em;
+}
+    a.prodButton {
+    transition: .5s ease;
+    border: solid 1px;
+    margin: 1vw;
+    padding: 4.5vw;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+
+}
+    .detailButton {
+	font-size: 15px;
+}
+}
+
 
 /* CSS Grid
 ------------------------------ */

@@ -423,8 +423,7 @@ transition: .5s ease;
     grid-template-columns: 2fr 2fr 2fr;
     grid-template-areas:
         "item1 item2 item3"
-        "item4 item5 item6";
-    grid-gap: 5px;}
+        "item4 item5 item6";}
 
 .item1Box{
     grid-area: item1;}
